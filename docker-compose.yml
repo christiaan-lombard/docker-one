@@ -1,0 +1,11 @@
+version: '2.0'
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: app_database
+    ports:
+      - "33060:3306"
+
