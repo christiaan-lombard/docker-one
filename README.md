@@ -63,12 +63,13 @@ My Docker notes and examples.
 
 A docker network allows docker containers on the same host to communicate with one another on an internal network.
 
-- IP addresses are issued to containers, by default, within the range `172.17.0.0/8`
+IP addresses are issued to containers, by default, within the range `172.17.0.0/8`
 
 - `docker network create` creates a new network
   - option `--driver [-d] DRIVER` - specify a driver
   - option `--subnet SUBNET` - specify a subnet in CIDR format eg. `182.18.0.0/16`
 - `docker network ls` lists networks
+
 
 **Examples:**
 
@@ -154,6 +155,15 @@ Compose allows you to define multi-container docker applications using a YAML fi
 1. Define the app environment with a `Dockerfile`
 2. Define the services that make up the app in `docker-compose.yml`
 3. Run `docker-compose up` to start and run the app
+
+`docker-compose` commands:
+- `docker-compose up` - Builds, (re)creates, starts, and attaches to containers for a service.
+  - option `--detatch -[d]` to run in background
+- `docker-compose down` - Stop and remove containers, networks, images, and volumes
+- `docker-compose start` - Start containers
+- `docker-compose kill` - Stop containers
+- `docker-compose restart` - Restart containers
+
 
 Example:
 
