@@ -57,6 +57,7 @@ My Docker notes and examples.
   - alias `docker inspect` - Can be used with any docker object
 - `docker container logs CONTAINER` - Fetch the logs of a container
   - alias `docker logs`
+- `docker container prune` - Remove all stopped containers
 
 
 ### **Manage Network** with `docker netork`
