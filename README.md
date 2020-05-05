@@ -11,7 +11,7 @@ My Docker notes and examples.
  - [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
  - [Docker Compose Reference](https://docs.docker.com/compose/compose-file/)
  - [freecodecamp Tuturial Video](https://www.youtube.com/watch?v=fqMOX6JJhGo)
-
+ - [A primer on PHP on Docker under Windows 10](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
 
 ---
 
@@ -105,9 +105,17 @@ docker network create \
 
 ---
 
-## Docker Images
+## Docker Examples
 
-**Useful for testing Docker**
+Start container and run bash terminal in container:
+```sh
+docker run --name php --rm -d php:7.3-fpm
+docker exec -it php bash
+
+```
+
+
+**Images for testing Docker**
 
 - `kodekloud/simple-prompt-docker` - Test interactive docker container
   - eg. `docker run -it kodekloud/simple-prompt-docker`
